@@ -86,7 +86,8 @@ h1 {
 
 img {
     width: 158px;
-    border: 0.1px solid var(--fourth-color);
+    height: auto;
+    border: 0.5px solid var(--fourth-color);
 }
 
 h2 {
