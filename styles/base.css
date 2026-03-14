@@ -4,7 +4,6 @@
     --secundary-color: #000;
     --third-color: #2c5488;
     --fourth-color: #222222da;
-    --background-color: #ffe3ca;
     --body-font: "Roboto", sans-serif;
 }
 
@@ -24,12 +23,15 @@ body {
 }
 
 /*Header*/
+header {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
 header span {
     padding: 2rem;
     display: block;
     font-size: 1.3rem;
-    color: var(--primary-color);
-    background-color: var(--third-color);
 }
 
 header nav {
@@ -43,7 +45,7 @@ header nav ul {
 
 header nav a {
 	display: block;
-	color: var(--primary-color);
+    color: var(--primary-color);
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
@@ -51,11 +53,6 @@ header nav a {
 
 header nav a:hover {
 	text-decoration: overline;
-}
-
-
-header nav ul {
-	display: flex;
 }
 
 nav ul li {
@@ -89,6 +86,7 @@ h1 {
 
 img {
     width: 158px;
+    border: 0.1px solid var(--fourth-color);
 }
 
 h2 {
@@ -136,7 +134,7 @@ h3 {
 }
 
 figure {
-    margin: 1rem;
+    padding: 1rem;
     text-align: center;
     font-style: italic;
 }
@@ -153,4 +151,8 @@ figure {
 footer{
     color: var(--primary-color);
     background-color: var(--third-color);
+}
+
+footer p {
+    padding: 0.5rem;
 }
